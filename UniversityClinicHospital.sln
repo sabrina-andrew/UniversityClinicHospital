@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityClinicHospital", "UniversityClinicHospital\UniversityClinicHospital.csproj", "{8E5C21D9-3FED-4149-91B5-C488CCE6C49B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityClinicHospital.Tests", "UniversityClinicHospital.Tests\UniversityClinicHospital.Tests.csproj", "{158755C8-CD08-49A4-9B56-C64917850040}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E5C21D9-3FED-4149-91B5-C488CCE6C49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5C21D9-3FED-4149-91B5-C488CCE6C49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5C21D9-3FED-4149-91B5-C488CCE6C49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5C21D9-3FED-4149-91B5-C488CCE6C49B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158755C8-CD08-49A4-9B56-C64917850040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158755C8-CD08-49A4-9B56-C64917850040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158755C8-CD08-49A4-9B56-C64917850040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158755C8-CD08-49A4-9B56-C64917850040}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C70C480-0456-465F-8276-49195FC2941C}
+	EndGlobalSection
+EndGlobal
