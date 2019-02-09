@@ -7,10 +7,10 @@ namespace UniversityClinicHospital
     public class Employee
     {
 
+
         public string Name { get; set; }
 
-
-         public Employee()
+        public Employee()
         {
         }
     }

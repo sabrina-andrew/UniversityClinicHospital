@@ -6,7 +6,9 @@ namespace UniversityClinicHospital
 {
     public class Doctor : Employee
     {
-        public string Salary = "$90,000";
+
+                
+        public string DoctorSalary = ("90,000");
 
         public  Doctor()
         {
