@@ -16,6 +16,8 @@ namespace UniversityClinicHospital
         {
             Console.WriteLine("What is your janitors name?");
             Name = Console.ReadLine();
+            Console.WriteLine("What is the ID Number?");
+            EmployeeNumber = Console.ReadLine();
         }
 
         public void JanitorGetsPaid()

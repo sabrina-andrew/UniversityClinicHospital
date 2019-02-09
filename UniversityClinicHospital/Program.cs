@@ -14,7 +14,8 @@ namespace UniversityClinicHospital
             Doctor doctor = new Doctor();
             Nurse nurse = new Nurse();
             Janitor janitor = new Janitor();
-            Receptionist receptionist = new Receptionist();          
+            Receptionist receptionist = new Receptionist();
+            Patient patient = new Patient();
 
             bool run = true;
 
@@ -25,7 +26,7 @@ namespace UniversityClinicHospital
                 Console.WriteLine("Press 2 to add a nurse");
                 Console.WriteLine("Press 3 to add a janitor");
                 Console.WriteLine("Press 4 to add a receptionist");
-                Console.WriteLine("Press 4 to admit a patient");
+                Console.WriteLine("Press 5 to admit a patient");
                 Console.WriteLine("Press 0 to quit");
 
                 string addEmployeeOrPatientMenu = Console.ReadLine();
@@ -51,6 +52,13 @@ namespace UniversityClinicHospital
                     case "4":
                         Console.WriteLine("Please give me the receptionists information");
                         receptionist.AddReceptionist();
+                        break;
+                    case "5":
+                        Console.WriteLine("Please give the patients information");
+                        patient.AddPatient();
+                        break;
+                    default:
+                        Console.WriteLine("Please follow the instructions");
                         break;
                      
                      

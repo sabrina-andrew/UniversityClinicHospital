@@ -9,6 +9,7 @@ namespace UniversityClinicHospital
 
 
         public string Name { get; set; }
+        public string EmployeeNumber { get; set; }
 
         public Employee()
         {

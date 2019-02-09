@@ -7,7 +7,7 @@ namespace UniversityClinicHospital
     public class Doctor : Employee
     {
 
-                
+        public string specialty;        
         public string DoctorSalary = ("90,000");
 
         public  Doctor()
@@ -18,6 +18,10 @@ namespace UniversityClinicHospital
         {
             Console.WriteLine("What is your doctors name?");
             Name = Console.ReadLine();
+            Console.WriteLine("What is the doctors specialty?");
+            specialty = Console.ReadLine();
+            Console.WriteLine("What is the employee ID number?");
+            EmployeeNumber = Console.ReadLine();
         }
 
         public void GetsPaid()

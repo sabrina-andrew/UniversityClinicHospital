@@ -16,6 +16,8 @@ namespace UniversityClinicHospital
         {
             Console.WriteLine("What is the receptionist name?");
             Name = Console.ReadLine();
+            Console.WriteLine("What is the employee ID Number?");
+            EmployeeNumber = Console.ReadLine();
         }
 
         public void GetsPaid()
