@@ -22,8 +22,8 @@ namespace UniversityClinicHospital.Tests
             //I think I am supposed to use encapsulation 
             //but, I haven't figured that part out yet.
             Janitor janitor = new Janitor();
-            janitor.Salary = "$40,000";
-            Equals("40,000");
+            janitor.Salary = 40000;
+            Equals(40000);
         }
     }
 }

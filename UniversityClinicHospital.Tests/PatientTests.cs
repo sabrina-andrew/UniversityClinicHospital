@@ -20,5 +20,12 @@ namespace UniversityClinicHospital.Tests
 
             Assert.Equal(10, patient.Health_Level);
         }
+
+        public void DrDrewBlood()
+        {
+            Patient patient = new Patient();
+            Assert.Equal(10, patient.Health_Level);
+            
+        }
     }
 }

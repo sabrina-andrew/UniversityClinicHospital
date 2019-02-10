@@ -6,8 +6,8 @@ namespace UniversityClinicHospital
 {
     public class Nurse : Employee
     {
-
-        public string NurseSalary = ("50,000");
+        public bool Paid { get; set; }
+       
 
         public Nurse()
         {
@@ -20,7 +20,18 @@ namespace UniversityClinicHospital
 
         public void NurseGetsPaid()
         {
-            Console.WriteLine("Here is $50,000.");
+
+            bool Paid = true;
+            if (Paid == true)
+            {
+                Paid = false;
+                Console.WriteLine("The Nurse got paid $50,000.");
+            }
+            else
+            {
+                Paid = true;
+                Console.WriteLine("The Nurse already got paid.");
+            }
         }
 
         public void CheckBloodLevel()

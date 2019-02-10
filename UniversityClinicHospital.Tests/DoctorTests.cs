@@ -22,8 +22,10 @@ namespace UniversityClinicHospital.Tests
             //I think I am supposed to use encapsulation 
             //but, I haven't figured that part out yet.
             Doctor dr = new Doctor();
-            dr.Salary = "$90,000";
-            Equals("90,000");
+            dr.Salary = 90000;
+            Equals(90,000);
         }
+
+
     }
 }

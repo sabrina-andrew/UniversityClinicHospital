@@ -33,7 +33,18 @@ namespace UniversityClinicHospital
 
         public void GetsPaid()
         {
-            Console.WriteLine("Here is $45,000.");
+
+            bool Paid = true;
+            if (Paid == true)
+            {
+                Paid = false;
+                Console.WriteLine("The receptionist got paid $45,000.");
+            }
+            else
+            {
+                Paid = true;
+                Console.WriteLine("The receptionist already got paid.");
+            }
         }
 
         public override void EmployeeStatus()

@@ -6,10 +6,16 @@ namespace UniversityClinicHospital
 {
     public class Janitor : Employee
     {
-        public bool sweep { get; set; }
+        public bool Sweep { get; set; }
+        public string Type { get; set; }
+        public bool Paid { get; set; }
+
+
 
         public Janitor()
         {
+            Name = "Fred";
+            EmployeeNumber = 123;
         }
 
         public void AddJanitor()
@@ -34,7 +40,18 @@ namespace UniversityClinicHospital
 
         public void JanitorGetsPaid()
         {
-            Console.WriteLine("Here is $40,000.");
+
+            bool Paid = true;
+            if (Paid == true)
+            {
+                Paid = false;
+                Console.WriteLine("The janitor got paid $40,000.");
+            }
+            else
+            {
+                Paid = true;
+                Console.WriteLine("The janitor already got paid.");
+            }
         }
 
         public override void EmployeeStatus()

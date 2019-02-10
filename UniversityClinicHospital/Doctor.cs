@@ -8,15 +8,13 @@ namespace UniversityClinicHospital
     {
 
         public string Specialty { get; set; }
-
-
+        public string Type { get; set; }
 
         public Doctor()
         {
             Name = "Dr Smith";
             EmployeeNumber = 111;
             Specialty = "heart";
-
         }
 
         public void AddDoctor()
@@ -36,11 +34,7 @@ namespace UniversityClinicHospital
                 wasExecuted = true;
             }
         }
-        public void CheckBloodLevel()
-        {
-           
-        }
-
+        
         public override void EmployeeStatus()
         {
             Console.WriteLine("Employee Name:  " + Name);
