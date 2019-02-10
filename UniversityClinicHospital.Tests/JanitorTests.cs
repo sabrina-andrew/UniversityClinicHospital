@@ -16,13 +16,13 @@ namespace UniversityClinicHospital.Tests
         }
 
         [Fact]
-        public void PaidNurse()
+        public void PaidJanitor()
         {
             //This passes no matter what the amount is.
             //I think I am supposed to use encapsulation 
             //but, I haven't figured that part out yet.
             Janitor janitor = new Janitor();
-            janitor.JanitorSalary = "$40,000";
+            janitor.Salary = "$40,000";
             Equals("40,000");
         }
     }

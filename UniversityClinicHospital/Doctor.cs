@@ -7,26 +7,52 @@ namespace UniversityClinicHospital
     public class Doctor : Employee
     {
 
-        public string specialty;        
-        public string DoctorSalary = ("90,000");
+        public string Specialty { get; set; }
 
-        public  Doctor()
+
+
+        public Doctor()
         {
+            Name = "Dr Smith";
+            EmployeeNumber = 111;
+            Specialty = "heart";
+
         }
-        
+
         public void AddDoctor()
         {
-            Console.WriteLine("What is your doctors name?");
-            Name = Console.ReadLine();
-            Console.WriteLine("What is the doctors specialty?");
-            specialty = Console.ReadLine();
-            Console.WriteLine("What is the employee ID number?");
-            EmployeeNumber = Console.ReadLine();
         }
 
+        private bool wasExecuted = false;
         public void GetsPaid()
         {
-            Console.WriteLine("Here is $90,000.");
+            if (wasExecuted)
+            {
+                Console.WriteLine("Here is $90,000.");
+            }
+            else
+            {
+                Console.Write("Doctor was already paid");
+                wasExecuted = true;
+            }
+        }
+        public void CheckBloodLevel()
+        {
+            Console.WriteLine("The doctor checked the patients blood");
+        }
+
+        public override void EmployeeStatus()
+        {
+            base.EmployeeStatus();
+
+            Console.WriteLine("Employee Name:  " + Name);
+            Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
+            Console.WriteLine("Salary:  " + Salary);
+            Console.WriteLine("Paid:  " + GotPaid);
         }
     }
 }
+
+
+
+

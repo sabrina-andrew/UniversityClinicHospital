@@ -15,15 +15,27 @@ namespace UniversityClinicHospital
 
         public void AddNurse()
         {
-            Console.WriteLine("What is your nurses name?");
-            Name = Console.ReadLine();
-            Console.WriteLine("What is the employee ID Number?");
-            EmployeeNumber = Console.ReadLine();
+           
         }
 
         public void NurseGetsPaid()
         {
             Console.WriteLine("Here is $50,000.");
+        }
+
+        public void CheckBloodLevel()
+        {
+            Console.WriteLine("The nurse checked the patients blood");
+        }
+
+        public override void EmployeeStatus()
+        {
+            base.EmployeeStatus();
+
+            Console.WriteLine("Employee Name:  " + Name);
+            Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
+            Console.WriteLine("Salary:  " + Salary);
+            Console.WriteLine("Paid:  " + GotPaid);
         }
 
     }

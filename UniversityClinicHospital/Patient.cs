@@ -4,10 +4,11 @@ using System.Text;
 
 namespace UniversityClinicHospital
 {
-    public class Patient : Employee
-    {
+    public class Patient 
+    {   public string Name { get; set; }
         public int Blood_Level { get; set; }
         public int Health_Level { get; set; }
+        public string Age { get; set; }
 
         public Patient()
         {
@@ -17,8 +18,12 @@ namespace UniversityClinicHospital
 
         public void AddPatient()
         {
-            Console.WriteLine("What is the patients name?");
-            Name = Console.ReadLine();
+            Console.WriteLine("Patient has been admitted"); 
         }              
+
+        public void RingForDoctor()
+        {
+            Console.WriteLine("Doctor drew the patients blood.");
+        }
     }
 }
