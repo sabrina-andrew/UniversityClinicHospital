@@ -28,12 +28,6 @@ namespace UniversityClinicHospital
             List<Employee> employeeList = new List<Employee>();
             List<Patient> patientList = new List<Patient>();
 
-
-
-            bool run = true;
-
-            do
-            {
                 Console.WriteLine("Hospital Menu");
                 Console.WriteLine("Press 1 to add a doctor");
                 Console.WriteLine("Press 2 to add a nurse");
@@ -48,7 +42,6 @@ namespace UniversityClinicHospital
                 {
                     case "0":
                         Console.WriteLine("Stay well, friend");
-                        run = false;
                         break;
                     case "1":
                         Console.WriteLine("Please give me the doctor information");
@@ -83,6 +76,7 @@ namespace UniversityClinicHospital
                         Console.WriteLine("What is the employee ID Number?");
                         EmployeeNumber = Console.ReadLine();
                         receptionist.AddReceptionist();
+                        
                         break;
                     case "5":
                         Console.WriteLine("Please give the patients information");
@@ -91,16 +85,14 @@ namespace UniversityClinicHospital
                         Console.WriteLine("What is the patients age?");
                         Age = Console.ReadLine();
                         patient.AddPatient();
+                        
                         break;
                     default:
                         Console.WriteLine("Please follow the instructions");
                         break;
                 }
-
-            } while (run == true);
-
-            { 
-
+                                    
+            {
                 if (employeeList != null)
                 {
                     Console.WriteLine("Press 1 to have the doctor draw blood from the patient");
@@ -108,11 +100,9 @@ namespace UniversityClinicHospital
                     Console.WriteLine("Press 3 to see if the receptionist is on the phone");
                     Console.WriteLine("Press 4 to see if the janitor is sweeping");
 
-                    string input;
-
-
-                    input = Console.ReadLine();
-                    switch (input)
+                    string interMenu;
+                    interMenu = Console.ReadLine();
+                    switch (interMenu)
                     {
                         case "1":
                             Console.WriteLine("The Doctor drew the patients blood");
@@ -126,8 +116,8 @@ namespace UniversityClinicHospital
 
 
                     }
-
                 }
+                
             } 
         }
     }
