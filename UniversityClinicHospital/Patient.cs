@@ -25,22 +25,24 @@ namespace UniversityClinicHospital
 
         public void DrDrewBlood()
         {
-            if (Blood_Level < 10)
+            if (Blood_Level <= 10)
             {
                 Health_Level += 10;
-                Console.WriteLine("Doctor drew blood ");
             }
         }
-
         public void NurseDrewBlood()
         {
-            if (Blood_Level < 10)
+            if (Blood_Level <= 10)
             {
                 Health_Level += 15;
-                Console.WriteLine("Nurse drew blood health level went to: " + Health_Level);
             }
         }
 
+        public void PatientGoesHome()
+        {
+            if (Health_Level == 100)
+                Console.WriteLine("The patient gets to go home!");
+        }
         public void Status()
         {
             Console.WriteLine("Patient Name:  " + Name);
@@ -48,7 +50,6 @@ namespace UniversityClinicHospital
             Console.WriteLine("Blood Level:  " + Blood_Level);
             Console.WriteLine("Health level:  " + Health_Level);
         }
-
     }
 }
 

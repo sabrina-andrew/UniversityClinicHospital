@@ -35,18 +35,18 @@ namespace UniversityClinicHospital
             else
             {
                 Paid = true;
-                Console.WriteLine("The Nurse already got paid.");
+                Console.WriteLine("\nThe Nurse already got paid.");
             }
         }
 
         public void CheckBloodLevel()
         {
-            Console.WriteLine("The nurse checked the patients blood");
+            Console.WriteLine("\nThe nurse checked the patients blood");
         }
 
         public override void EmployeeStatus()
         {
-            Console.WriteLine("\nEmployee Name:  " + Name);
+            Console.WriteLine("\n\nEmployee Name:  " + Name);
             Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
             Console.WriteLine("Salary:  " + Salary);
             Console.WriteLine("Paid:  " + GotPaid);

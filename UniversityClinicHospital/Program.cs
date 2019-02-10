@@ -5,10 +5,8 @@ namespace UniversityClinicHospital
 {
     public class Program
     {
-        private static string EmployeeNumber;
-
+   
         public static string Name { get; private set; }
-        public static string Specialty { get; private set; }
         public static string Age { get; private set; }
 
         static void Main(string[] args)
@@ -71,6 +69,7 @@ namespace UniversityClinicHospital
                         break;
                         
                 }
+                
             } while (run);
         }
     }
