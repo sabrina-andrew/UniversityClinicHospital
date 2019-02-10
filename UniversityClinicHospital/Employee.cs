@@ -16,15 +16,7 @@ namespace UniversityClinicHospital
             GotPaid = false;
             
         }
-        public virtual void EmployeeStatus()
-        {
-
-        }
-
-        
-
-        
-        
-        
+        public abstract void EmployeeStatus();
+    
     }
 }

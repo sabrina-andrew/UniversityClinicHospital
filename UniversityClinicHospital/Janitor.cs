@@ -39,8 +39,6 @@ namespace UniversityClinicHospital
 
         public override void EmployeeStatus()
         {
-            base.EmployeeStatus();
-
             Console.WriteLine("Employee Name:  " + Name);
             Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
             Console.WriteLine("Salary:  " + Salary);

@@ -18,12 +18,11 @@ namespace UniversityClinicHospital
 
         public void AddPatient()
         {
-            Console.WriteLine("Patient has been admitted"); 
         }              
 
-        public void RingForDoctor()
+        public void Status()
         {
-            Console.WriteLine("Doctor drew the patients blood.");
+           
         }
     }
 }

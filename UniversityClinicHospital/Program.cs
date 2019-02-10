@@ -24,6 +24,7 @@ namespace UniversityClinicHospital
             Janitor janitor = new Janitor();
             Receptionist receptionist = new Receptionist();
             Patient patient = new Patient();
+            
 
             List<Employee> employeeList = new List<Employee>();
             List<Patient> patientList = new List<Patient>();
@@ -97,8 +98,12 @@ namespace UniversityClinicHospital
                 {
                     Console.WriteLine("Press 1 to have the doctor draw blood from the patient");
                     Console.WriteLine("Press 2 to have the nurse draw blood from the patient");
-                    Console.WriteLine("Press 3 to see if the receptionist is on the phone");
-                    Console.WriteLine("Press 4 to see if the janitor is sweeping");
+                    Console.WriteLine("Press 3 to see if the receptionists status");
+                    Console.WriteLine("Press 4 to see if the janitors status");
+                    Console.WriteLine("Press 5 to see the doctors status");
+                    Console.WriteLine("Press 6 to see the nurses status");
+                    Console.WriteLine("Press 7 to see the patients status");
+                    Console.WriteLine("Press 0  to go to the main menu");
 
                     string interMenu;
                     interMenu = Console.ReadLine();
@@ -110,14 +115,31 @@ namespace UniversityClinicHospital
                         case "2":
                             Console.WriteLine("The Nurse drew the patients blood");
                             break;
-
+                        case "3":
+                            receptionist.EmployeeStatus();
+                            break;
+                        case "4":
+                            janitor.EmployeeStatus();
+                            break;
+                        case "5":
+                            doctor.EmployeeStatus();
+                            break;
+                        case "6":
+                            nurse.EmployeeStatus();
+                            break;
+                        case "7":
+                            patient.Status();
+                            break;
+                        case "0":
+                            Console.WriteLine("Stay well, friend");
+                            break;
                         default:
+                            Console.WriteLine("Please follow the instructions");
                             break;
 
 
                     }
                 }
-                
             } 
         }
     }
