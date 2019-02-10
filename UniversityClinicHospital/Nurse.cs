@@ -7,10 +7,15 @@ namespace UniversityClinicHospital
     public class Nurse : Employee
     {
         public bool Paid { get; set; }
+        public string Type { get; set; }
        
 
         public Nurse()
         {
+            Name = "Christine";
+            EmployeeNumber = 1;
+            Salary = 50000;
+            Type = "Nurse";
         }
 
         public void AddNurse()
@@ -18,7 +23,7 @@ namespace UniversityClinicHospital
            
         }
 
-        public void NurseGetsPaid()
+        public override void PayEmployees()
         {
 
             bool Paid = true;
@@ -41,11 +46,11 @@ namespace UniversityClinicHospital
 
         public override void EmployeeStatus()
         {
-            Console.WriteLine("Employee Name:  " + Name);
+            Console.WriteLine("\nEmployee Name:  " + Name);
             Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
             Console.WriteLine("Salary:  " + Salary);
             Console.WriteLine("Paid:  " + GotPaid);
+            Console.WriteLine("Position: " + Type);
         }
-
     }
-}
+  }

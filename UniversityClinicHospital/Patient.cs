@@ -15,7 +15,8 @@ namespace UniversityClinicHospital
         {
             Blood_Level = 20;
             Health_Level = 10;
-            
+            Name = "Steve Urkel";
+            Age = "34";
         }
 
         public void AddPatient()

@@ -9,13 +9,12 @@ namespace UniversityClinicHospital
         public bool Sweep { get; set; }
         public string Type { get; set; }
         public bool Paid { get; set; }
-
-
-
+       
         public Janitor()
         {
             Name = "Fred";
-            EmployeeNumber = 123;
+            EmployeeNumber = 26;
+            Salary = 40000;
         }
 
         public void AddJanitor()
@@ -38,7 +37,7 @@ namespace UniversityClinicHospital
             }
         }
 
-        public void JanitorGetsPaid()
+        public override void PayEmployees()
         {
 
             bool Paid = true;
@@ -56,10 +55,12 @@ namespace UniversityClinicHospital
 
         public override void EmployeeStatus()
         {
-            Console.WriteLine("Employee Name:  " + Name);
+            Console.WriteLine("\nEmployee Name:  " + Name);
             Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
             Console.WriteLine("Salary:  " + Salary);
             Console.WriteLine("Paid:  " + GotPaid);
+            Console.WriteLine("");
+            Console.WriteLine("");
         }
     }
 }

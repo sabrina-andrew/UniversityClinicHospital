@@ -12,9 +12,11 @@ namespace UniversityClinicHospital
 
         public Doctor()
         {
-            Name = "Dr Smith";
+            Name = "Dr. Pepper";
             EmployeeNumber = 111;
-            Specialty = "heart";
+            Specialty = "Heart";
+            Salary = 90000;
+            Type = "Doctor";
         }
 
         public void AddDoctor()
@@ -22,11 +24,11 @@ namespace UniversityClinicHospital
         }
 
         private bool wasExecuted = false;
-        public void GetsPaid()
+        public override void PayEmployees()
         {
             if (wasExecuted)
             {
-                Console.WriteLine("Here is $90,000.");
+                Console.WriteLine("Here is $" + Salary);
             }
             else
             {
@@ -37,10 +39,13 @@ namespace UniversityClinicHospital
         
         public override void EmployeeStatus()
         {
-            Console.WriteLine("Employee Name:  " + Name);
+            Console.WriteLine("\nEmployee Name:  " + Name);
             Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
             Console.WriteLine("Salary:  " + Salary);
             Console.WriteLine("Paid:  " + GotPaid);
+            Console.WriteLine("Position:  " + Type);
+            Console.WriteLine("Specialty:  " + Specialty);
+            
         }
     }
 }

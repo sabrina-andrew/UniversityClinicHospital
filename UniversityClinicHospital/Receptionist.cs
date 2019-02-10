@@ -10,6 +10,9 @@ namespace UniversityClinicHospital
 
         public Receptionist()
         {
+            Name = "Roxi";
+            EmployeeNumber = 12;
+            Salary = 45000;
         }
 
         public void AddReceptionist()
@@ -31,7 +34,7 @@ namespace UniversityClinicHospital
             }
         }
 
-        public void GetsPaid()
+        public override void PayEmployees()
         {
 
             bool Paid = true;
@@ -49,11 +52,10 @@ namespace UniversityClinicHospital
 
         public override void EmployeeStatus()
         {
-            Console.WriteLine("Employee Name:  " + Name);
+            Console.WriteLine("\nEmployee Name:  " + Name);
             Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
             Console.WriteLine("Salary:  " + Salary);
             Console.WriteLine("Paid:  " + GotPaid);
         }
-
     }
 }

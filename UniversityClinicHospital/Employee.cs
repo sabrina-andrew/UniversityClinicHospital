@@ -17,6 +17,8 @@ namespace UniversityClinicHospital
             
         }
         public abstract void EmployeeStatus();
+
+        public abstract void PayEmployees();
     
     }
 }
