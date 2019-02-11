@@ -21,10 +21,7 @@ namespace UniversityClinicHospital
             Janitor janitor = new Janitor();
             Receptionist receptionist = new Receptionist();
             Patient patient = new Patient();
-            
-            List<Employee> employeeList = new List<Employee>();
-            List<Patient> patientList = new List<Patient>();
-
+       
             bool run = true;
 
             do
