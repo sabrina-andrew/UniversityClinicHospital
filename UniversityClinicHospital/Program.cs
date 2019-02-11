@@ -22,7 +22,6 @@ namespace UniversityClinicHospital
             Receptionist receptionist = new Receptionist();
             Patient patient = new Patient();
             
-
             List<Employee> employeeList = new List<Employee>();
             List<Patient> patientList = new List<Patient>();
 
@@ -67,9 +66,7 @@ namespace UniversityClinicHospital
                         receptionist.PayEmployees();
                         janitor.PayEmployees();
                         break;
-                        
                 }
-                
             } while (run);
         }
     }

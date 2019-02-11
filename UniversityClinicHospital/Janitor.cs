@@ -8,13 +8,14 @@ namespace UniversityClinicHospital
     {
         public bool Sweep { get; set; }
         public string Type { get; set; }
-        public bool Paid { get; set; }
-       
-        public Janitor()
+
+
+        public Janitor() : base()
         {
             Name = "Fred";
             EmployeeNumber = 26;
             Salary = 40000;
+            
         }
 
         public void AddJanitor()
@@ -39,16 +40,13 @@ namespace UniversityClinicHospital
 
         public override void PayEmployees()
         {
-
-            bool Paid = true;
-            if (Paid == true)
+            if (Paid == false)
             {
-                Paid = false;
+                Paid = true;
                 Console.WriteLine("\nThe janitor got paid $40,000.");
             }
             else
             {
-                Paid = true;
                 Console.WriteLine("\nThe janitor already got paid.");
             }
         }
@@ -58,7 +56,7 @@ namespace UniversityClinicHospital
             Console.WriteLine("\n\nEmployee Name:  " + Name);
             Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
             Console.WriteLine("Salary:  " + Salary);
-            Console.WriteLine("Paid:  " + GotPaid);
+            Console.WriteLine("Paid:  " + base.Paid);
             Console.WriteLine("What is the janitor doing:  " + Sweep);
             Console.WriteLine("");
             Console.WriteLine("");

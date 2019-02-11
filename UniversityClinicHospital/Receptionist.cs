@@ -23,29 +23,25 @@ namespace UniversityClinicHospital
         {
             if (ReceptionistOnPhone == true)
             {
-                ReceptionistOnPhone = true;
+                
                 Console.WriteLine("The receptionist can help you");
             }
             else
             {
-                ReceptionistOnPhone = false;
+                
                 Console.WriteLine("The receptionist is talking to her boyfriend");
-
             }
         }
 
         public override void PayEmployees()
         {
-
-            bool Paid = true;
-            if (Paid == true)
+            if (Paid == false)
             {
-                Paid = false;
+                Paid = true;
                 Console.WriteLine("\nThe receptionist got paid $45,000.");
             }
             else
             {
-                Paid = true;
                 Console.WriteLine("\nThe receptionist already got paid.");
             }
         }
@@ -55,9 +51,8 @@ namespace UniversityClinicHospital
             Console.WriteLine("\n\nEmployee Name:  " + Name);
             Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
             Console.WriteLine("Salary:  " + Salary);
-            Console.WriteLine("Paid:  " + GotPaid);
+            Console.WriteLine("Paid:  " + Paid);
             Console.WriteLine("What is the receptionist doing:  " + ReceptionistOnPhone);
-
         }
     }
 }

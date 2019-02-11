@@ -23,26 +23,26 @@ namespace UniversityClinicHospital
         {
         }
 
-        private bool wasExecuted = false;
         public override void PayEmployees()
         {
-            if (wasExecuted)
+            if (Paid == false)
             {
-                Console.WriteLine("\nHere is $" + Salary);
+                Paid = true;
+                Console.WriteLine("The Doctor got paid $90,000.");
             }
             else
             {
-                Console.Write("\nDoctor was already paid");
-                wasExecuted = true;
+                Console.WriteLine("\nThe Doctor already got paid.");
             }
         }
-        
+
+
         public override void EmployeeStatus()
         {
             Console.WriteLine("\n\nEmployee Name:  " + Name);
             Console.WriteLine("Employee ID Number:  " + EmployeeNumber);
             Console.WriteLine("Salary:  " + Salary);
-            Console.WriteLine("Paid:  " + GotPaid);
+            Console.WriteLine("Paid:  " + Paid);
             Console.WriteLine("Position:  " + Type);
             Console.WriteLine("Specialty:  " + Specialty);
             

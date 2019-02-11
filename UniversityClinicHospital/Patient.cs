@@ -25,14 +25,14 @@ namespace UniversityClinicHospital
 
         public void DrDrewBlood()
         {
-            if (Blood_Level <= 10)
+            if (Blood_Level <= 20)
             {
                 Health_Level += 10;
             }
         }
         public void NurseDrewBlood()
         {
-            if (Blood_Level <= 10)
+            if (Blood_Level <= 20)
             {
                 Health_Level += 15;
             }
