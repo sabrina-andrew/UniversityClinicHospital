@@ -25,15 +25,15 @@ namespace UniversityClinicHospital
 
         public void JanitorSweeping()
         {
-            bool sweep = true;
-            if (sweep == true)
+            
+            if (Sweep == false)
             {
-                sweep = false;
+                Sweep = true;
                 Console.WriteLine("The janitor is sweeping");
             }
             else
             {
-                sweep = true;
+                Sweep = false;
                 Console.WriteLine("The janitor is on his break");
             }
         }

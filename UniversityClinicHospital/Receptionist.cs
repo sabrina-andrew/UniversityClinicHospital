@@ -21,14 +21,14 @@ namespace UniversityClinicHospital
 
         public void OnPhone()
         {
-            if (ReceptionistOnPhone == true)
+            if (ReceptionistOnPhone == false)
             {
-                
+                ReceptionistOnPhone = true;
                 Console.WriteLine("The receptionist can help you");
             }
             else
             {
-                
+                ReceptionistOnPhone = false;
                 Console.WriteLine("The receptionist is talking to her boyfriend");
             }
         }
