@@ -21,15 +21,15 @@ namespace UniversityClinicHospital
 
         public void OnPhone()
         {
-            if (ReceptionistOnPhone == false)
+            if (ReceptionistOnPhone)
             {
-                ReceptionistOnPhone = true;
-                Console.WriteLine("The receptionist can help you");
+                ReceptionistOnPhone = false;
+                Console.WriteLine("The receptionists manager made her get off the phone.");
             }
             else
             {
-                ReceptionistOnPhone = false;
-                Console.WriteLine("The receptionist is talking to her boyfriend");
+                ReceptionistOnPhone = true;
+                Console.WriteLine("The receptionists is now making reminder phone calls for tomorrows appointments.");
             }
         }
 

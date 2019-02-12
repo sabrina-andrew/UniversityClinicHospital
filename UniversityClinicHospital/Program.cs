@@ -32,6 +32,8 @@ namespace UniversityClinicHospital
                 Console.WriteLine("Press 3 to check patient stats");
                 Console.WriteLine("Press 4 to to check employee stats");
                 Console.WriteLine("Press 5 to pay the employees");
+                Console.WriteLine("Press 6 to interact with the receptionist");
+                Console.WriteLine("PRess 7 to interact with the janitor");
                 Console.WriteLine("Press 0 to quit");
 
                 string EmployeeOrPatientMenu = Console.ReadLine();
@@ -62,6 +64,12 @@ namespace UniversityClinicHospital
                         nurse.PayEmployees();
                         receptionist.PayEmployees();
                         janitor.PayEmployees();
+                        break;
+                    case "6":
+                        receptionist.OnPhone();
+                        break;
+                    case "7":
+                        janitor.JanitorSweeping();
                         break;
                 }
             } while (run);
